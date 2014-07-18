@@ -1,4 +1,5 @@
 var exec = require('child_process').exec;
+var path = require('path');
 
 module.exports = function (options) {
 	if(options.gitRoot === undefined) {
@@ -22,8 +23,8 @@ module.exports = function (options) {
 			
 			relative = req.path.substring(baseRoute.length);
 			cmd = [
-				gitRoot,
 				__dirname + '/bin/base.py',
+				path.join(process.cwd(), gitRoot),
 				basePath + relative, 
 				req.query.callback ? req.query.callback : '',
 				req.query.version ? req.query.version : '',
