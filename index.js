@@ -19,8 +19,8 @@ module.exports = function (options) {
 		cmd;
 
 	return function (req, res, next) {
-		if(req.path.indexOf(baseRoute) === 0 && req.query.diff) {
-			
+		var matchesRoute = baseRoute === '' || req.path.indexOf(baseRoute) === 0
+		if(matchesRoute && ~~req.query.diff) {
 			relative = req.path.substring(baseRoute.length);
 			cmd = [
 				__dirname + '/bin/base.py',

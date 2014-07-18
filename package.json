@@ -1,6 +1,6 @@
 {
   "name": "diffserv-node-express",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "diffserv-node-express =====================",
   "main": "index.js",
   "scripts": {
