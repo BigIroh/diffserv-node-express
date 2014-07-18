@@ -1,0 +1,19 @@
+{
+  "name": "diffserv-node-express",
+  "version": "0.0.0",
+  "description": "diffserv-node-express =====================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BigIroh/diffserv-node-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BigIroh/diffserv-node-express/issues"
+  },
+  "homepage": "https://github.com/BigIroh/diffserv-node-express"
+}
