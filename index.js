@@ -19,7 +19,7 @@ module.exports = function (options) {
 		cmd;
 
 	return function (req, res, next) {
-		if(req.path.indexOf(baseRoute) === 0) {
+		if(req.path.indexOf(baseRoute) === 0 && req.query.diff) {
 			
 			relative = req.path.substring(baseRoute.length);
 			cmd = [
