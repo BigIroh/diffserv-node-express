@@ -17,7 +17,10 @@ def getResponse(git_base, path, callback=None, version=None, target=None):
         with open (os.path.join(git_base,path), "r") as myfile:
             resp['content'] = myfile.read()
     else:
-        resp['delta'] = generateDiff(git_base, version, resp['version'])
+        if version == resp['version']:
+            resp['delta'] = "0,0,0"
+        else:
+            resp['delta'] = generateDiff(git_base, version, resp['version'])
 
     if callback == None:
         return json.dumps(resp)
