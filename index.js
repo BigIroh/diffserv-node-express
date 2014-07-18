@@ -23,7 +23,7 @@ module.exports = function (options) {
 			relative = req.path.substring(baseRoute.length);
 			cmd = [
 				__dirname + '/bin/base.py',
-				relative + basePath, 
+				basePath + relative, 
 				req.query.callback ? req.query.callback : '',
 				req.query.version ? req.query.version : '',
 				req.query.next ? req.query.next : ''
