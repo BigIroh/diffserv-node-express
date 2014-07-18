@@ -22,6 +22,7 @@ module.exports = function (options) {
 			
 			relative = req.path.substring(baseRoute.length);
 			cmd = [
+				gitRoot,
 				__dirname + '/bin/base.py',
 				basePath + relative, 
 				req.query.callback ? req.query.callback : '',
