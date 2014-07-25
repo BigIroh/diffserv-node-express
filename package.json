@@ -1,6 +1,6 @@
 {
   "name": "diffserv-node-express",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "diffserv-node-express =====================",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git://github.com/BigIroh/diffserv-node-express.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache v2",
   "bugs": {
     "url": "https://github.com/BigIroh/diffserv-node-express/issues"
   },
