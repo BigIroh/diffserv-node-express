@@ -23,7 +23,7 @@ module.exports = function (options) {
 		if(matchesRoute && ~~req.query.diff) {
 			relative = req.path.substring(baseRoute.length);
 			cmd = [
-				__dirname + '/bin/base.py',
+				__dirname + '/bin/diffserv-cli/src/base.py',
 				path.join(process.cwd(), gitRoot),
 				basePath + relative, 
 				req.query.callback ? req.query.callback : '',

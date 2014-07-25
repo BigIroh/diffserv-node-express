@@ -1,0 +1,3 @@
+[submodule "bin/diffserv-cli"]
+	path = bin/diffserv-cli
+	url = git@github.com:BigIroh/diffserv-cli.git
